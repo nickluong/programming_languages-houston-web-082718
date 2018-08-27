@@ -4,7 +4,7 @@ def reformat_languages(languages)
 
   languages.each do |style, langs|
   	langs.each do |lang, type|
-  		if result.include? |lang|
+  		if result.include? lang
   			result[lang][:style] << style 
   		else
 	  		type[:style] = [style]
